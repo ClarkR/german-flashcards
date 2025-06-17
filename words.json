@@ -1,0 +1,758 @@
+[
+  {
+    "german": "verboten",
+    "english": "forbidden"
+  },
+  {
+    "german": "shockiert",
+    "english": "shocked"
+  },
+  {
+    "german": "teilen",
+    "english": "to share"
+  },
+  {
+    "german": "zeigen",
+    "english": "to show"
+  },
+  {
+    "german": "sofort",
+    "english": "immediately"
+  },
+  {
+    "german": "auf dem gras",
+    "english": "on the grass"
+  },
+  {
+    "german": "beide",
+    "english": "both"
+  },
+  {
+    "german": "einen rock",
+    "english": "a skirt"
+  },
+  {
+    "german": "räumen sie nicht auf",
+    "english": ""
+  },
+  {
+    "german": "früher",
+    "english": "earlier"
+  },
+  {
+    "german": "Niemand",
+    "english": "nobody"
+  },
+  {
+    "german": "polizisten",
+    "english": ""
+  },
+  {
+    "german": "doch",
+    "english": "however"
+  },
+  {
+    "german": "bestimmt",
+    "english": "determined"
+  },
+  {
+    "german": "stange",
+    "english": "a pint"
+  },
+  {
+    "german": "grüne",
+    "english": "green"
+  },
+  {
+    "german": "augen",
+    "english": "eyes"
+  },
+  {
+    "german": "natürlich",
+    "english": "of course"
+  },
+  {
+    "german": "glück",
+    "english": "luck"
+  },
+  {
+    "german": "wörterbuch",
+    "english": "dictionnary"
+  },
+  {
+    "german": "lehrer",
+    "english": "teacher"
+  },
+  {
+    "german": "schon",
+    "english": "already"
+  },
+  {
+    "german": "mögen",
+    "english": "to like"
+  },
+  {
+    "german": "to continue",
+    "english": "weitermachen"
+  },
+  {
+    "german": "Geburtstag",
+    "english": "birthday"
+  },
+  {
+    "german": "Anstatt",
+    "english": "instead of"
+  },
+  {
+    "german": "buchstabieren",
+    "english": "to spell"
+  },
+  {
+    "german": "nochmal",
+    "english": "again"
+  },
+  {
+    "german": "ubung",
+    "english": "exercise"
+  },
+  {
+    "german": "neblig",
+    "english": "foggy"
+  },
+  {
+    "german": "der schnee",
+    "english": "snow"
+  },
+  {
+    "german": "der himmel",
+    "english": "the sky"
+  },
+  {
+    "german": "der blitz",
+    "english": "tonerre"
+  },
+  {
+    "german": "sonne",
+    "english": "sun"
+  },
+  {
+    "german": "regen",
+    "english": "rain"
+  },
+  {
+    "german": "Wolken",
+    "english": "clouds"
+  },
+  {
+    "german": "Sonnencreme",
+    "english": "Sonnenschutz"
+  },
+  {
+    "german": "ein Zelt",
+    "english": "a tent"
+  },
+  {
+    "german": "Alleine",
+    "english": "alone"
+  },
+  {
+    "german": "Steuerberatung",
+    "english": "tax advice"
+  },
+  {
+    "german": "Spazieren",
+    "english": "strolling"
+  },
+  {
+    "german": "Gewinner",
+    "english": "winner"
+  },
+  {
+    "german": "drausen",
+    "english": "outside and aus means out if it's a movement from inside to outside"
+  },
+  {
+    "german": "der stuhl",
+    "english": "the chair"
+  },
+  {
+    "german": "bild",
+    "english": "image"
+  },
+  {
+    "german": "sechzehn",
+    "english": "16"
+  },
+  {
+    "german": "sie macht ein foto",
+    "english": "she takes a picture"
+  },
+  {
+    "german": "der opa",
+    "english": "der grossvater"
+  },
+  {
+    "german": "Die oma",
+    "english": "die grossmutter"
+  },
+  {
+    "german": "Lachen",
+    "english": "to laugh"
+  },
+  {
+    "german": "glücklich",
+    "english": "happy"
+  },
+  {
+    "german": "frölich",
+    "english": "happy"
+  },
+  {
+    "german": "unglücklich",
+    "english": "unhappy"
+  },
+  {
+    "german": "traurig",
+    "english": "sad"
+  },
+  {
+    "german": "Die mutter",
+    "english": "the mother"
+  },
+  {
+    "german": "böse",
+    "english": "very angry"
+  },
+  {
+    "german": "eine bank",
+    "english": "a bench"
+  },
+  {
+    "german": "(die) Zeichnung",
+    "english": "drawing"
+  },
+  {
+    "german": "vorstelen",
+    "english": "to imagine"
+  },
+  {
+    "german": "einmal",
+    "english": "once"
+  },
+  {
+    "german": "gefährlich",
+    "english": "dangerous"
+  },
+  {
+    "german": "sicher",
+    "english": "safe"
+  },
+  {
+    "german": "zweineinhalb",
+    "english": "2 and a half"
+  },
+  {
+    "german": "bisschen",
+    "english": "a little bit"
+  },
+  {
+    "german": "ordnen",
+    "english": "arrange"
+  },
+  {
+    "german": "wieder",
+    "english": "again"
+  },
+  {
+    "german": "ferien",
+    "english": "holidays"
+  },
+  {
+    "german": "grüezi mitanang",
+    "english": "hi everyone"
+  },
+  {
+    "german": "begrussen",
+    "english": "greetings"
+  },
+  {
+    "german": "verabschieden",
+    "english": "ways of saying goodbye"
+  },
+  {
+    "german": "nochmal",
+    "english": "again"
+  },
+  {
+    "german": "wort",
+    "english": "word"
+  },
+  {
+    "german": "traumen",
+    "english": "to dream"
+  },
+  {
+    "german": "gemacht",
+    "english": "made"
+  },
+  {
+    "german": "Bestigung",
+    "english": "climb"
+  },
+  {
+    "german": "klettern",
+    "english": "climb"
+  },
+  {
+    "german": "hilfen",
+    "english": "to help"
+  },
+  {
+    "german": "hofen",
+    "english": "to hope"
+  },
+  {
+    "german": "geld",
+    "english": "money"
+  },
+  {
+    "german": "sohn",
+    "english": "son"
+  },
+  {
+    "german": "tochter",
+    "english": "daughter"
+  },
+  {
+    "german": "vater",
+    "english": "father"
+  },
+  {
+    "german": "schwiegervater/mutter",
+    "english": "step father/mother"
+  },
+  {
+    "german": "onkel",
+    "english": "uncle"
+  },
+  {
+    "german": "tante",
+    "english": "aunt"
+  },
+  {
+    "german": "denken",
+    "english": "to think"
+  },
+  {
+    "german": "die gesprache",
+    "english": "the conversation"
+  },
+  {
+    "german": "erganzen",
+    "english": "to add"
+  },
+  {
+    "german": "wer",
+    "english": "who"
+  },
+  {
+    "german": "stimmt",
+    "english": "true"
+  },
+  {
+    "german": "ich habe keine achnung",
+    "english": "I have no idea"
+  },
+  {
+    "german": "Sonst",
+    "english": "otherwise"
+  },
+  {
+    "german": "wechseln auf",
+    "english": "switch to"
+  },
+  {
+    "german": "gerade",
+    "english": "currently"
+  },
+  {
+    "german": "arbeitslos",
+    "english": "unemployment"
+  },
+  {
+    "german": "was komisch ist",
+    "english": "which is weird"
+  },
+  {
+    "german": "letzten",
+    "english": "last"
+  },
+  {
+    "german": "Zertifizierung",
+    "english": "certification"
+  },
+  {
+    "german": "Unternehmen",
+    "english": "companies"
+  },
+  {
+    "german": "erscheinen",
+    "english": "to appear"
+  },
+  {
+    "german": "ab",
+    "english": "from (as a starting point)"
+  },
+  {
+    "german": "noch more",
+    "english": "even more"
+  },
+  {
+    "german": "sachen",
+    "english": "things"
+  },
+  {
+    "german": "Erganzen",
+    "english": "to add"
+  },
+  {
+    "german": "einkaufen",
+    "english": "shopping"
+  },
+  {
+    "german": "Obst",
+    "english": "fruits"
+  },
+  {
+    "german": "Schrank",
+    "english": "wardrobe"
+  },
+  {
+    "german": "Flasche",
+    "english": "bottle"
+  },
+  {
+    "german": "Because",
+    "english": "weil"
+  },
+  {
+    "german": "das Regal",
+    "english": "the shelf / etagere"
+  },
+  {
+    "german": "sessel",
+    "english": "armchair"
+  },
+  {
+    "german": "bequem",
+    "english": "comfortable"
+  },
+  {
+    "german": "günstig",
+    "english": "cheap"
+  },
+  {
+    "german": "keine Lust",
+    "english": "desire"
+  },
+  {
+    "german": "Dann",
+    "english": "then"
+  },
+  {
+    "german": "nehmen",
+    "english": "to take"
+  },
+  {
+    "german": "auch",
+    "english": "also / too"
+  },
+  {
+    "german": "badewanne",
+    "english": "baignoir"
+  },
+  {
+    "german": "aufzug",
+    "english": "ascenseur"
+  },
+  {
+    "german": "toll",
+    "english": "cool"
+  },
+  {
+    "german": "glas",
+    "english": "glass / verre"
+  },
+  {
+    "german": "zwischen",
+    "english": "between"
+  },
+  {
+    "german": "neben",
+    "english": "next to"
+  },
+  {
+    "german": "koffer",
+    "english": "suitcase"
+  },
+  {
+    "german": "ruksack",
+    "english": "backpack"
+  },
+  {
+    "german": "einkaufstasche",
+    "english": "tote bag"
+  },
+  {
+    "german": "Schwester",
+    "english": "sister"
+  },
+  {
+    "german": "bruder",
+    "english": "brother"
+  },
+  {
+    "german": "geboren",
+    "english": "born"
+  },
+  {
+    "german": "eine Vermutung",
+    "english": "a guess"
+  },
+  {
+    "german": "die Hauptstadt",
+    "english": "capital city"
+  },
+  {
+    "german": "weniger als",
+    "english": "less than"
+  },
+  {
+    "german": "buchstabieren",
+    "english": "to spell"
+  },
+  {
+    "german": "nicht da",
+    "english": "not there"
+  },
+  {
+    "german": "lustig",
+    "english": "funny"
+  },
+  {
+    "german": "erlauben",
+    "english": "to allow"
+  },
+  {
+    "german": "Zeigen",
+    "english": "to show"
+  },
+  {
+    "german": "zahl",
+    "english": "number"
+  },
+  {
+    "german": "null",
+    "english": "0"
+  },
+  {
+    "german": "unterstrich",
+    "english": "underscore"
+  },
+  {
+    "german": "bindestrich",
+    "english": "dash"
+  },
+  {
+    "german": "allgemein",
+    "english": "general"
+  },
+  {
+    "german": "als",
+    "english": "as"
+  },
+  {
+    "german": "Aufstehen",
+    "english": "get up"
+  },
+  {
+    "german": "Erledigen",
+    "english": "to accomplish or to take care of"
+  },
+  {
+    "german": "Wichtigen",
+    "english": "important"
+  },
+  {
+    "german": "Dinge",
+    "english": "things"
+  },
+  {
+    "german": "versuche",
+    "english": "attempts"
+  },
+  {
+    "german": "Turm",
+    "english": "tower"
+  },
+  {
+    "german": "To prefer",
+    "english": "bevorzugen"
+  },
+  {
+    "german": "nicht so sehr",
+    "english": "not so much"
+  },
+  {
+    "german": "feuer",
+    "english": "fire"
+  },
+  {
+    "german": "ein koch",
+    "english": "a cook"
+  },
+  {
+    "german": "fast",
+    "english": "almost"
+  },
+  {
+    "german": "jemand",
+    "english": "someone"
+  },
+  {
+    "german": "baustelle",
+    "english": "construction site"
+  },
+  {
+    "german": "freunde",
+    "english": "friend"
+  },
+  {
+    "german": "klettern",
+    "english": "climb"
+  },
+  {
+    "german": "geschlecht",
+    "english": "gender"
+  },
+  {
+    "german": "Endungen",
+    "english": "endings"
+  },
+  {
+    "german": "regel",
+    "english": "rule"
+  },
+  {
+    "german": "einladung",
+    "english": "invitation"
+  },
+  {
+    "german": "kennenlernen",
+    "english": "to get to know"
+  },
+  {
+    "german": "ganz",
+    "english": "completely"
+  },
+  {
+    "german": "ganz in der Nähe",
+    "english": "very close"
+  },
+  {
+    "german": "to continue",
+    "english": "weitermachen"
+  },
+  {
+    "german": "eltern",
+    "english": "parents"
+  },
+  {
+    "german": "vielleicht",
+    "english": "maybe"
+  },
+  {
+    "german": "gerne",
+    "english": "gladly/likes to/with pleasure"
+  },
+  {
+    "german": "reden",
+    "english": "to talk"
+  },
+  {
+    "german": "hausaufgaben",
+    "english": "homework"
+  },
+  {
+    "german": "kennen",
+    "english": "to know somone/familiar with"
+  },
+  {
+    "german": "bestimmt",
+    "english": "determined"
+  },
+  {
+    "german": "spass",
+    "english": "fun"
+  },
+  {
+    "german": "schalten",
+    "english": "switch"
+  },
+  {
+    "german": "öffnen",
+    "english": "to open"
+  },
+  {
+    "german": "paar",
+    "english": "pair"
+  },
+  {
+    "german": "meisteins",
+    "english": "mostly"
+  },
+  {
+    "german": "versuchen",
+    "english": "to try"
+  },
+  {
+    "german": "ähnlich",
+    "english": "similar"
+  },
+  {
+    "german": "bekante",
+    "english": "known"
+  },
+  {
+    "german": "es kommt darauf an",
+    "english": "it depends"
+  },
+  {
+    "german": "to start",
+    "english": "beginnen"
+  },
+  {
+    "german": "hundert",
+    "english": "hundred"
+  },
+  {
+    "german": "gestern",
+    "english": "yesterday"
+  },
+  {
+    "german": "Dampschiff",
+    "english": "boat"
+  },
+  {
+    "german": "flöte",
+    "english": "flute"
+  },
+  {
+    "german": "umziehen",
+    "english": "to move"
+  },
+  {
+    "german": "freut mich",
+    "english": "nice to meet you"
+  }
+]

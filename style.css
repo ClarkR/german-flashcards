@@ -1,0 +1,77 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #333;
+  --input-bg: #fff;
+  --input-border: #ddd;
+  --button-bg: #4a90e2;
+  --button-hover-bg: #357ABD;
+  --button-text: #fff;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --input-bg: #333;
+  --input-border: #555;
+  --button-bg: #555;           /* darker, muted blue for buttons */
+  --button-hover-bg: #777;     /* slightly lighter hover */
+  --button-text: #eee;         /* light text on dark buttons */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input,
+#userInput {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 2px solid var(--input-border);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+input:focus,
+#userInput:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(74, 144, 226, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#shortcuts {
+  right: 20px !important; /* Adds breathing room from the right */
+}
+
