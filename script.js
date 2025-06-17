@@ -84,6 +84,8 @@ function checkAnswer() {
     feedback.textContent = `❌ Incorrect. Correct answer: ${currentCard.english}`;
     feedback.style.color = "red";
   }
+  document.getElementById("userInput").blur();
+
 }
 
 function revealAnswer() {
