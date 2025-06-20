@@ -1,6 +1,14 @@
 let flashcards = [];
 let currentCard = null;
 
+async function translateGermanToEnglish(text) {
+  const response = await fetch(
+    `https://muddy-thrilling-snow.glitch.me/translate?text=${encodeURIComponent(text)}`
+  );
+  const data = await response.json();
+  return data.translation; // Returns translated text
+}
+
 fetch('words-new.json')
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
