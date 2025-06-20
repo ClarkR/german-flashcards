@@ -71,20 +71,36 @@ button:hover {
   margin-top: 1rem;
 }
 
+/* Replace your existing #shortcuts styles with this: */
 #shortcuts {
-  right: 20px !important; /* Adds breathing room from the right */
-}
-/* Ensure buttons align horizontally */
-.button-group {
-  display: flex;
-  gap: 0.5rem;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: rgba(74, 144, 226, 0.85);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  width: 160px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  user-select: none;
+  z-index: 9999;
 }
 
-/* Add this at the bottom of your style.css file */
+/* Add this mobile-specific rule at the bottom of your CSS */
 @media (max-width: 768px) {
   #shortcuts {
-    display: none !important;
+    display: none;
   }
+  
+  /* Optional: Adjust button spacing for mobile */
+  .button-group {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+}
 
 /* Style the Translate button */
 .button-group button {
