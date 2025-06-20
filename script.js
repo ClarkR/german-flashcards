@@ -6,7 +6,7 @@ let currentCard = null;
 // ======================
 async function translateText(text) {
   const response = await fetch(
-    `https://flicker-accessible-spark.glitch.me/translate?text=${encodeURIComponent(text)}`
+    `https://aerial-plant-fenugreek.glitch.me/translate?text=${encodeURIComponent(text)}`
   );
   if (!response.ok) throw new Error(`Translation API failed: ${response.status}`);
   const data = await response.json();
