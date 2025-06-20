@@ -74,4 +74,14 @@ button:hover {
 #shortcuts {
   right: 20px !important; /* Adds breathing room from the right */
 }
+/* Ensure buttons align horizontally */
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
 
+/* Style the Translate button */
+.button-group button {
+  flex: 1; /* Equal width */
+  padding: 0.5rem;
+}
