@@ -28,12 +28,15 @@
   <div class="container" style="max-width:600px; margin: 5rem auto 2rem auto; padding: 0 1rem;">
     <h1>German Flashcards</h1>
 
-    <div class="card-input">
-      <input type="text" id="german" placeholder="German word" />
-      <input type="text" id="english" placeholder="English translation" />
-      <button onclick="addCard()">Add Flashcard</button>
-      <button onclick="translateInput()">Auto-Translate</button>
-    </div>
+   <div class="card-input">
+  <input type="text" id="german" placeholder="German word" />
+  <input type="text" id="english" placeholder="English translation" />
+  <!-- Wrap buttons in button-group for proper spacing -->
+  <div class="button-group" style="margin-top: 0.5rem;">
+    <button onclick="addCard()">Add Flashcard</button>
+    <button onclick="translateInput()">Auto-Translate</button>
+  </div>
+</div>
 
     <hr />
 
