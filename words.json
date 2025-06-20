@@ -1,5 +1,4 @@
 [
-  [
   {
     "german": "liegen",
     "english": "to locate"
@@ -33,7 +32,7 @@
     "english": "bicycle"
   },
   {
-    "german": "nicht shclächt",
+    "german": "nicht schlecht",
     "english": "not bad"
   },
   {
@@ -105,7 +104,7 @@
     "english": "forbidden"
   },
   {
-    "german": "shockiert",
+    "german": "schockiert",
     "english": "shocked"
   },
   {
@@ -131,46 +130,6 @@
   {
     "german": "einen rock",
     "english": "a skirt"
-  },
-  {
-    "german": "früher",
-    "english": "earlier"
-  },
-  {
-    "german": "verboten",
-    "english": "forbidden"
-  },
-  {
-    "german": "shockiert",
-    "english": "shocked"
-  },
-  {
-    "german": "teilen",
-    "english": "to share"
-  },
-  {
-    "german": "zeigen",
-    "english": "to show"
-  },
-  {
-    "german": "sofort",
-    "english": "immediately"
-  },
-  {
-    "german": "auf dem gras",
-    "english": "on the grass"
-  },
-  {
-    "german": "beide",
-    "english": "both"
-  },
-  {
-    "german": "einen rock",
-    "english": "a skirt"
-  },
-  {
-    "german": "räumen sie nicht auf",
-    "english": ""
   },
   {
     "german": "früher",
@@ -182,7 +141,7 @@
   },
   {
     "german": "polizisten",
-    "english": ""
+    "english": "police officers"
   },
   {
     "german": "doch",
@@ -214,7 +173,7 @@
   },
   {
     "german": "wörterbuch",
-    "english": "dictionnary"
+    "english": "dictionary"
   },
   {
     "german": "lehrer",
@@ -229,8 +188,8 @@
     "english": "to like"
   },
   {
-    "german": "to continue",
-    "english": "weitermachen"
+    "german": "weitermachen",
+    "english": "to continue"
   },
   {
     "german": "Geburtstag",
@@ -249,7 +208,7 @@
     "english": "again"
   },
   {
-    "german": "ubung",
+    "german": "übung",
     "english": "exercise"
   },
   {
@@ -266,7 +225,7 @@
   },
   {
     "german": "der blitz",
-    "english": "tonerre"
+    "english": "lightning"
   },
   {
     "german": "sonne",
@@ -282,7 +241,7 @@
   },
   {
     "german": "Sonnencreme",
-    "english": "Sonnenschutz"
+    "english": "sunscreen"
   },
   {
     "german": "ein Zelt",
@@ -305,8 +264,8 @@
     "english": "winner"
   },
   {
-    "german": "drausen",
-    "english": "outside and aus means out if it's a movement from inside to outside"
+    "german": "draußen",
+    "english": "outside"
   },
   {
     "german": "der stuhl",
@@ -326,11 +285,11 @@
   },
   {
     "german": "der opa",
-    "english": "der grossvater"
+    "english": "grandfather"
   },
   {
     "german": "Die oma",
-    "english": "die grossmutter"
+    "english": "grandmother"
   },
   {
     "german": "Lachen",
@@ -341,7 +300,7 @@
     "english": "happy"
   },
   {
-    "german": "frölich",
+    "german": "fröhlich",
     "english": "happy"
   },
   {
@@ -369,7 +328,7 @@
     "english": "drawing"
   },
   {
-    "german": "vorstelen",
+    "german": "vorstellen",
     "english": "to imagine"
   },
   {
@@ -385,7 +344,7 @@
     "english": "safe"
   },
   {
-    "german": "zweineinhalb",
+    "german": "zweieinhalb",
     "english": "2 and a half"
   },
   {
@@ -405,11 +364,11 @@
     "english": "holidays"
   },
   {
-    "german": "grüezi mitanang",
+    "german": "grüezi mitanand",
     "english": "hi everyone"
   },
   {
-    "german": "begrussen",
+    "german": "begrüßen",
     "english": "greetings"
   },
   {
@@ -417,15 +376,11 @@
     "english": "ways of saying goodbye"
   },
   {
-    "german": "nochmal",
-    "english": "again"
-  },
-  {
     "german": "wort",
     "english": "word"
   },
   {
-    "german": "traumen",
+    "german": "träumen",
     "english": "to dream"
   },
   {
@@ -433,7 +388,7 @@
     "english": "made"
   },
   {
-    "german": "Bestigung",
+    "german": "Besteigung",
     "english": "climb"
   },
   {
@@ -441,11 +396,11 @@
     "english": "climb"
   },
   {
-    "german": "hilfen",
+    "german": "helfen",
     "english": "to help"
   },
   {
-    "german": "hofen",
+    "german": "hoffen",
     "english": "to hope"
   },
   {
@@ -465,8 +420,12 @@
     "english": "father"
   },
   {
-    "german": "schwiegervater/mutter",
-    "english": "step father/mother"
+    "german": "schwiegervater",
+    "english": "father-in-law"
+  },
+  {
+    "german": "schwiegermutter",
+    "english": "mother-in-law"
   },
   {
     "german": "onkel",
@@ -481,11 +440,11 @@
     "english": "to think"
   },
   {
-    "german": "die gesprache",
+    "german": "die gespräche",
     "english": "the conversation"
   },
   {
-    "german": "erganzen",
+    "german": "ergänzen",
     "english": "to add"
   },
   {
@@ -497,7 +456,7 @@
     "english": "true"
   },
   {
-    "german": "ich habe keine achnung",
+    "german": "ich habe keine ahnung",
     "english": "I have no idea"
   },
   {
@@ -514,7 +473,7 @@
   },
   {
     "german": "arbeitslos",
-    "english": "unemployment"
+    "english": "unemployed"
   },
   {
     "german": "was komisch ist",
@@ -541,16 +500,12 @@
     "english": "from (as a starting point)"
   },
   {
-    "german": "noch more",
+    "german": "noch mehr",
     "english": "even more"
   },
   {
     "german": "sachen",
     "english": "things"
-  },
-  {
-    "german": "Erganzen",
-    "english": "to add"
   },
   {
     "german": "einkaufen",
@@ -569,12 +524,12 @@
     "english": "bottle"
   },
   {
-    "german": "Because",
-    "english": "weil"
+    "german": "weil",
+    "english": "because"
   },
   {
     "german": "das Regal",
-    "english": "the shelf / etagere"
+    "english": "the shelf"
   },
   {
     "german": "sessel",
@@ -590,7 +545,7 @@
   },
   {
     "german": "keine Lust",
-    "english": "desire"
+    "english": "no desire"
   },
   {
     "german": "Dann",
@@ -606,11 +561,11 @@
   },
   {
     "german": "badewanne",
-    "english": "baignoir"
+    "english": "bathtub"
   },
   {
     "german": "aufzug",
-    "english": "ascenseur"
+    "english": "elevator"
   },
   {
     "german": "toll",
@@ -618,7 +573,7 @@
   },
   {
     "german": "glas",
-    "english": "glass / verre"
+    "english": "glass"
   },
   {
     "german": "zwischen",
@@ -633,7 +588,7 @@
     "english": "suitcase"
   },
   {
-    "german": "ruksack",
+    "german": "rucksack",
     "english": "backpack"
   },
   {
@@ -665,10 +620,6 @@
     "english": "less than"
   },
   {
-    "german": "buchstabieren",
-    "english": "to spell"
-  },
-  {
     "german": "nicht da",
     "english": "not there"
   },
@@ -679,10 +630,6 @@
   {
     "german": "erlauben",
     "english": "to allow"
-  },
-  {
-    "german": "Zeigen",
-    "english": "to show"
   },
   {
     "german": "zahl",
@@ -714,7 +661,7 @@
   },
   {
     "german": "Erledigen",
-    "english": "to accomplish or to take care of"
+    "english": "to accomplish"
   },
   {
     "german": "Wichtigen",
@@ -733,8 +680,8 @@
     "english": "tower"
   },
   {
-    "german": "To prefer",
-    "english": "bevorzugen"
+    "german": "bevorzugen",
+    "english": "to prefer"
   },
   {
     "german": "nicht so sehr",
@@ -762,11 +709,7 @@
   },
   {
     "german": "freunde",
-    "english": "friend"
-  },
-  {
-    "german": "klettern",
-    "english": "climb"
+    "english": "friends"
   },
   {
     "german": "geschlecht",
@@ -797,10 +740,6 @@
     "english": "very close"
   },
   {
-    "german": "to continue",
-    "english": "weitermachen"
-  },
-  {
     "german": "eltern",
     "english": "parents"
   },
@@ -810,7 +749,7 @@
   },
   {
     "german": "gerne",
-    "english": "gladly/likes to/with pleasure"
+    "english": "gladly"
   },
   {
     "german": "reden",
@@ -822,14 +761,10 @@
   },
   {
     "german": "kennen",
-    "english": "to know somone/familiar with"
+    "english": "to know someone"
   },
   {
-    "german": "bestimmt",
-    "english": "determined"
-  },
-  {
-    "german": "spass",
+    "german": "spaß",
     "english": "fun"
   },
   {
@@ -845,10 +780,6 @@
     "english": "pair"
   },
   {
-    "german": "meisteins",
-    "english": "mostly"
-  },
-  {
     "german": "versuchen",
     "english": "to try"
   },
@@ -857,7 +788,7 @@
     "english": "similar"
   },
   {
-    "german": "bekante",
+    "german": "bekannte",
     "english": "known"
   },
   {
@@ -865,8 +796,8 @@
     "english": "it depends"
   },
   {
-    "german": "to start",
-    "english": "beginnen"
+    "german": "beginnen",
+    "english": "to start"
   },
   {
     "german": "hundert",
@@ -878,7 +809,7 @@
   },
   {
     "german": "Dampschiff",
-    "english": "boat"
+    "english": "steamboat"
   },
   {
     "german": "flöte",
