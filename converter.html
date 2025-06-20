@@ -36,7 +36,7 @@
   <h1>German Flashcard Converter</h1>
 
   <input type="file" id="fileInput" accept=".json">
-  <button onclick="loadExisting()">Load Existing words.json</button>
+  <button onclick="loadExisting()">Load Existing words-new.json</button>
 
   <textarea id="inputText" placeholder="Paste lines like: Hund = dog"></textarea>
   <button onclick="convert()">Convert + Merge</button>
@@ -50,7 +50,7 @@
 
     function loadExisting() {
       const file = document.getElementById("fileInput").files[0];
-      if (!file) return alert("Select a words.json file first.");
+      if (!file) return alert("Select a words-new.json file first.");
       const reader = new FileReader();
       reader.onload = e => {
         try {
