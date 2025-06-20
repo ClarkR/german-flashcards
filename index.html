@@ -32,6 +32,7 @@
       <input type="text" id="german" placeholder="German word" />
       <input type="text" id="english" placeholder="English translation" />
       <button onclick="addCard()">Add Flashcard</button>
+      <button onclick="translateInput()">Auto-Translate</button>
     </div>
 
     <hr />
@@ -51,8 +52,6 @@
         <p id="feedback" style="margin-top: 0.75rem;"></p>
       </div>
       
-      
-
       <div id="reveal-mode" style="display: none;">
         <button onclick="revealAnswer()">Reveal Answer</button>
         <p id="english-word"></p>
