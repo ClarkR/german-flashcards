@@ -1,7 +1,7 @@
 let flashcards = [];
 let currentCard = null;
 
-fetch('words.json')
+fetch('words-new.json')
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     return response.json();
