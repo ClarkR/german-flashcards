@@ -1,6 +1,26 @@
 let flashcards = [];
 let currentCard = null;
 
+async function translateInput() {
+  const germanInput = document.getElementById("german").value.trim();
+  const englishInput = document.getElementById("english");
+
+  if (!germanInput) {
+    alert("Enter a German word first.");
+    return;
+  }
+
+  try {
+    englishInput.value = "Translating..."; // Loading state
+    const translation = await translateGermanToEnglish(germanInput);
+    englishInput.value = translation; // Auto-fill the English field
+  } catch (error) {
+    englishInput.value = "";
+    alert("Translation failed. Manually enter the English word.");
+    console.error(error);
+  }
+}
+
 async function translateGermanToEnglish(text) {
   const response = await fetch(
     `https://muddy-thrilling-snow.glitch.me/translate?text=${encodeURIComponent(text)}`
