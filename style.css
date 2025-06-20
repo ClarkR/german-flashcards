@@ -80,6 +80,12 @@ button:hover {
   gap: 0.5rem;
 }
 
+/* Add this at the bottom of your style.css file */
+@media (max-width: 768px) {
+  #shortcuts {
+    display: none !important;
+  }
+
 /* Style the Translate button */
 .button-group button {
   flex: 1; /* Equal width */
