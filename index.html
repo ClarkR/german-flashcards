@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +19,7 @@
 </head>
 <body>
   <div class="top-right-button">
-    <a href="converter.html">
-      <button>Go to Converter</button>
-    </a>
+    <a href="converter.html"><button>Go to Converter</button></a>
     <button id="toggleModeBtn" onclick="toggleMode()">🔁 Mode: DE → EN</button>
     <button id="darkModeBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
   </div>
@@ -31,7 +30,10 @@
     <div class="card-input">
       <input type="text" id="german" placeholder="German word" />
       <input type="text" id="english" placeholder="English translation" />
-      <button onclick="addCard()">Add Flashcard</button>
+      <div class="button-group" style="margin-top: 0.5rem;">
+        <button onclick="addCard()">Add Flashcard</button>
+        <button onclick="translateInput()">Auto-Translate</button>
+      </div>
     </div>
 
     <hr />
@@ -40,10 +42,13 @@
       <button onclick="showRandomCard()">Show Flashcard</button>
       <p id="german-word" class="flashcard-word"></p>
 
-      <div id="answer-mode" style="display: none;">
-        <input type="text" id="userInput" placeholder="Type translation" autocomplete="off" />
-        <button onclick="checkAnswer()">Check Answer</button>
-        <p id="feedback"></p>
+      <div id="answer-mode" style="display: none; margin-top: 1.5rem;">
+        <input type="text" id="userInput" placeholder="Type English translation" autocomplete="off" />
+        <div class="button-group" style="margin-top: 1rem;">
+          <button onclick="checkAnswer()">Check Answer</button>
+          <button onclick="showRandomCard()">Next Flashcard</button>
+        </div>
+        <p id="feedback" style="margin-top: 0.75rem;"></p>
       </div>
 
       <div id="reveal-mode" style="display: none;">
@@ -52,8 +57,15 @@
       </div>
     </div>
 
-    <div class="next-button" style="text-align: center; margin-top: 2rem;">
-      <button onclick="showRandomCard()">Next Flashcard</button>
+    <div id="shortcuts" style="position: fixed; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(74, 144, 226, 0.85); color: white; padding: 1rem; border-radius: 10px; font-family: Arial, sans-serif; font-size: 0.85rem; width: 160px; box-shadow: 0 0 8px rgba(0,0,0,0.3); user-select: none; z-index: 9999;">
+      <h3 style="margin-top:0; margin-bottom:0.5rem; font-weight:700; font-size:1rem; text-align:center;">Shortcuts</h3>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li><b>Enter</b>: Check answer</li>
+        <li><b>R</b>: Reveal answer</li>
+        <li><b>N</b>: New card</li>
+        <li><b>D</b>: Toggle dark mode</li>
+        <li><b>T</b>: Translate card</li>
+      </ul>
     </div>
   </div>
 
