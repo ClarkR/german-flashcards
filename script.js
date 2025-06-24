@@ -1,32 +1,90 @@
 let flashcards = [];
 let currentCard = null;
-let isReversed = false; // NEW: toggle mode flag
+let isReversed = false;
 
-fetch('words-new.json')
-  .then(response => {
-    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-    return response.json();
-  })
-  .then(data => {
-    const localData = JSON.parse(localStorage.getItem("flashcards")) || [];
-    flashcards = localData.length > 0 ? localData : data;
-    if (localData.length === 0) {
-      localStorage.setItem("flashcards", JSON.stringify(flashcards));
-    }
-  })
-  .catch(error => console.error("Error loading JSON:", error));
+// ======================
+// TRANSLATION FUNCTIONS
+// ======================
+async function translateText(text) {
+  const response = await fetch(
+    `https://aerial-plant-fenugreek.glitch.me/translate?text=${encodeURIComponent(text)}`
+  );
+  if (!response.ok) throw new Error(`Translation API failed: ${response.status}`);
+  const data = await response.json();
+  return data.translation;
+}
+
+async function translateInput() {
+  const germanInput = document.getElementById("german");
+  const englishInput = document.getElementById("english");
+  const germanText = germanInput.value.trim();
+
+  if (!germanText) {
+    alert("Please enter a German word first.");
+    return;
+  }
+
+  try {
+    englishInput.value = "Translating...";
+    englishInput.disabled = true;
+    const translation = await translateText(germanText);
+    englishInput.value = translation;
+  } catch (error) {
+    englishInput.value = "";
+    alert("Translation failed. Please enter manually.");
+    console.error("Translation error:", error);
+  } finally {
+    englishInput.disabled = false;
+  }
+}
+
+async function translateCard() {
+  if (!currentCard) return;
+  const englishWord = document.getElementById("english-word");
+
+  try {
+    englishWord.textContent = "Translating...";
+    const source = isReversed ? currentCard.english : currentCard.german;
+    const translation = await translateText(source);
+    englishWord.textContent = translation;
+    document.getElementById("reveal-mode").style.display = "block";
+  } catch (error) {
+    englishWord.textContent = "❌ Translation failed";
+    console.error("Practice translation error:", error);
+  }
+}
+
+// ======================
+// FLASHCARD MANAGEMENT
+// ======================
+function loadFlashcards() {
+  fetch('words-new.json')
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.json();
+    })
+    .then(data => {
+      const localData = JSON.parse(localStorage.getItem("flashcards")) || [];
+      flashcards = localData.length > 0 ? localData : data;
+      if (localData.length === 0) {
+        localStorage.setItem("flashcards", JSON.stringify(flashcards));
+      }
+      console.log("Flashcards loaded:", flashcards.length);
+    })
+    .catch(error => console.error("Loading error:", error));
+}
 
 function addCard() {
   const german = document.getElementById("german").value.trim();
   const english = document.getElementById("english").value.trim();
 
   if (!german || !english) {
-    alert("Please fill in both fields.");
+    alert("Both fields are required!");
     return;
   }
 
   if (flashcards.some(card => card.german.toLowerCase() === german.toLowerCase())) {
-    alert("This German word already exists.");
+    alert("This word already exists!");
     return;
   }
 
@@ -35,10 +93,12 @@ function addCard() {
 
   document.getElementById("german").value = "";
   document.getElementById("english").value = "";
-
-  alert("Flashcard added!");
+  document.getElementById("german").focus();
 }
 
+// ======================
+// PRACTICE MODE
+// ======================
 function showRandomCard() {
   if (flashcards.length === 0) {
     alert("No flashcards available. Add some first!");
@@ -46,7 +106,6 @@ function showRandomCard() {
   }
 
   currentCard = flashcards[Math.floor(Math.random() * flashcards.length)];
-
   document.getElementById("german-word").textContent = isReversed
     ? currentCard.english
     : currentCard.german;
@@ -67,10 +126,7 @@ function showRandomCard() {
 }
 
 function checkAnswer() {
-  if (!currentCard) {
-    alert("Please show a flashcard first.");
-    return;
-  }
+  if (!currentCard) return;
 
   const userAnswer = document.getElementById("userInput").value.trim().toLowerCase();
   const correctAnswer = (isReversed ? currentCard.german : currentCard.english).toLowerCase();
@@ -78,30 +134,31 @@ function checkAnswer() {
 
   if (userAnswer === correctAnswer) {
     feedback.textContent = "✅ Correct!";
-    feedback.style.color = "green";
+    feedback.style.color = "var(--correct-color, green)";
   } else {
-    feedback.textContent = `❌ Incorrect. Correct answer: ${isReversed ? currentCard.german : currentCard.english}`;
-    feedback.style.color = "red";
+    feedback.textContent = `❌ Incorrect. The answer was: ${isReversed ? currentCard.german : currentCard.english}`;
+    feedback.style.color = "var(--incorrect-color, red)";
   }
 
   document.getElementById("userInput").blur();
 }
 
 function revealAnswer() {
-  if (!currentCard) {
-    alert("Please show a flashcard first.");
-    return;
-  }
-  const answer = document.getElementById("english-word").dataset.translation;
-  document.getElementById("english-word").textContent = answer;
+  if (!currentCard) return;
+  document.getElementById("english-word").textContent =
+    document.getElementById("english-word").dataset.translation;
   document.getElementById("reveal-mode").style.display = "block";
 }
 
+// ======================
+// UI HELPERS
+// ======================
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
   const btn = document.getElementById("darkModeBtn");
-  const isDark = document.body.classList.contains("dark-mode");
-  btn.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+  btn.textContent = document.body.classList.contains("dark-mode")
+    ? "☀️ Light Mode"
+    : "🌙 Dark Mode";
 }
 
 function toggleMode() {
@@ -111,15 +168,22 @@ function toggleMode() {
   showRandomCard();
 }
 
-document.addEventListener("keydown", function (e) {
+// ======================
+// INITIALIZATION
+// ======================
+document.addEventListener("keydown", (e) => {
   const inputFocused = document.activeElement.tagName === "INPUT";
+
   if (e.key === "Enter" && inputFocused && document.getElementById("userInput").value) {
     checkAnswer();
-  } else if (e.key.toLowerCase() === "r") {
-    revealAnswer();
-  } else if (e.key.toLowerCase() === "n") {
-    showRandomCard();
-  } else if (e.key.toLowerCase() === "d") {
-    toggleDarkMode();
+  } else if (!inputFocused) {
+    switch (e.key.toLowerCase()) {
+      case "r": revealAnswer(); break;
+      case "n": showRandomCard(); break;
+      case "d": toggleDarkMode(); break;
+      case "t": translateCard(); break;
+    }
   }
 });
+
+loadFlashcards();
