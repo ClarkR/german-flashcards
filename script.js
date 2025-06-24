@@ -2,7 +2,7 @@ let flashcards = [];
 let currentCard = null;
 let isReversed = false; // NEW: toggle mode flag
 
-fetch('words.json')
+fetch('words-new.json')
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
     return response.json();
