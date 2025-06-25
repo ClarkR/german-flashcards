@@ -1,910 +1,240 @@
 [
-  {
-    "german": "leeren",
-    "english": "to empty"
-  },
-  {
-    "german": "orte",
-    "english": "places"
-  },
-  {
-    "german": "der Strand",
-    "english": "the beach"
-  },
-  {
-    "german": "ausschalten",
-    "english": "to turn off"
-  },
-  {
-    "german": "pünktlich",
-    "english": "precisely"
-  },
-  {
-    "german": "ausleeren",
-    "english": "to empty out"
-  },
-  {
-    "german": "aufhängen",
-    "english": "to hang up"
-  },
-  {
-    "german": "fernsehen",
-    "english": "tv"
-  },
-  {
-    "german": "aufraümen",
-    "english": "to tidy up"
-  },
-  {
-    "german": "abwaschen",
-    "english": "washing up"
-  },
-  {
-    "german": "Geschirr",
-    "english": "dishes"
-  },
-  {
-    "german": "danach",
-    "english": "afternach"
-  },
-  {
-    "german": "früstück",
-    "english": "breakfast"
-  },
-  {
-    "german": "vorbereiten",
-    "english": "to prepare"
-  },
-  {
-    "german": "das wetter",
-    "english": "the weather"
-  },
-  {
-    "german": "flug",
-    "english": "traffic jam"
-  },
-  {
-    "german": "gegen",
-    "english": "around (time related)"
-  },
-  {
-    "german": "mitkommen",
-    "english": "to come with"
-  },
-  {
-    "german": "treffen",
-    "english": "to meet"
-  },
-  {
-    "german": "an der",
-    "english": "at the"
-  },
-  {
-    "german": "zurückkommen",
-    "english": "to come back"
-  },
-  {
-    "german": "aufstehen",
-    "english": "to get up"
-  },
-  {
-    "german": "zumachen",
-    "english": "to close"
-  },
-  {
-    "german": "reinkommen",
-    "english": "to come in"
-  },
-  {
-    "german": "aufmachen",
-    "english": "to open"
-  },
-  {
-    "german": "anfangen",
-    "english": "to begin"
-  },
-  {
-    "german": "ankommen",
-    "english": "to arrive"
-  },
-  {
-    "german": "austeigen",
-    "english": "to get out"
-  },
-  {
-    "german": "umsteigen",
-    "english": "to transfer"
-  },
-  {
-    "german": "einsteigen",
-    "english": "to get on board"
-  },
-  {
-    "german": "Der Stift",
-    "english": "the pen"
-  },
-  {
-    "german": "Sprachen",
-    "english": "languages"
-  },
-  {
-    "german": "schauen",
-    "english": "to watch"
-  },
-  {
-    "german": "fußgänger",
-    "english": "pedestrian"
-  },
-  {
-    "german": "halten",
-    "english": "to hold"
-  },
-  {
-    "german": "Ampel",
-    "english": "traffic light"
-  },
-  {
-    "german": "rechnen",
-    "english": "calculate"
-  },
-  {
-    "german": "im",
-    "english": "in"
-  },
-  {
-    "german": "brille",
-    "english": "glasses (to wear)"
-  },
-  {
-    "german": "oft",
-    "english": "often"
-  },
-  {
-    "german": "zeigen",
-    "english": "to show"
-  },
-  {
-    "german": "kopfschmerzen",
-    "english": ""
-  },
-  {
-    "german": "leihen",
-    "english": "to lend"
-  },
-  {
-    "german": "antworten",
-    "english": "to reply"
-  },
-  {
-    "german": "Vielleicht",
-    "english": "maybe"
-  },
-  {
-    "german": "stoppen",
-    "english": "to stop"
-  },
-  {
-    "german": "die meer",
-    "english": "the sea"
-  },
-  {
-    "german": "laut sein",
-    "english": "be loud"
-  },
-  {
-    "german": "hineingehen",
-    "english": "go in"
-  },
-  {
-    "german": "wegfahren",
-    "english": "to leave"
-  },
-  {
-    "german": "noch nicht",
-    "english": "not yet"
-  },
-  {
-    "german": "wandern",
-    "english": "to hike"
-  },
-  {
-    "german": "das Verb",
-    "english": "the verb"
-  },
-  {
-    "german": "tisch reservieren",
-    "english": "book a table"
-  },
-  {
-    "german": "schlanker",
-    "english": "slimmer"
-  },
-  {
-    "german": "rauchen",
-    "english": "to smoke"
-  },
-  {
-    "german": "zwischen",
-    "english": "between"
-  },
-  {
-    "german": "duschen",
-    "english": "to shower"
-  },
-  {
-    "german": "sterben",
-    "english": "to die"
-  },
-  {
-    "german": "die erklärung",
-    "english": "the explanation"
-  },
-  {
-    "german": "Qualitätszeit",
-    "english": "quality time"
-  },
-  {
-    "german": "ein anderer",
-    "english": "another"
-  },
-  {
-    "german": "andere",
-    "english": "other"
-  },
-  {
-    "german": "Programmieren",
-    "english": "to code"
-  },
-  {
-    "german": "das Workout",
-    "english": "workout"
-  },
-  {
-    "german": "der Teppich",
-    "english": "carpet"
-  },
-  {
-    "german": "die Prüfung",
-    "english": "test"
-  },
-  {
-    "german": "die Prostituierte",
-    "english": "prostitute (\"Pouf\" is slang, not standard)"
-  },
-  {
-    "german": "das Gleiche",
-    "english": "the same"
-  },
-  {
-    "german": "die Quittung",
-    "english": "receipt"
-  },
-  {
-    "german": "das Benzin",
-    "english": "petrol"
-  },
-  {
-    "german": "das Denkmal",
-    "english": "monument"
-  },
-  {
-    "german": "der Spiegel",
-    "english": "mirror"
-  },
-  {
-    "german": "die Pilze",
-    "english": "mushrooms"
-  },
-  {
-    "german": "der Arzt",
-    "english": "doctor (corrected from \"Arz\")"
-  },
-  {
-    "german": "der Urlaub",
-    "english": "vacation"
-  },
-  {
-    "german": "die Putz",
-    "english": "cleaning (colloquial; standard is \"das Putzen\")"
-  },
-  {
-    "german": "der Süden",
-    "english": "south"
-  },
-  {
-    "german": "der See",
-    "english": "lake"
-  },
-  {
-    "german": "der Fluss",
-    "english": "river"
-  },
-  {
-    "german": "das Fahrrad",
-    "english": "bicycle"
-  },
-  {
-    "german": "die Geschwister",
-    "english": "siblings"
-  },
-  {
-    "german": "das Frühstück",
-    "english": "breakfast"
-  },
-  {
-    "german": "die Empfehlung",
-    "english": "recommendation"
-  },
-  {
-    "german": "die Berge",
-    "english": "mountains"
-  },
-  {
-    "german": "die Wanderung",
-    "english": "hike"
-  },
-  {
-    "german": "der Rock",
-    "english": "skirt"
-  },
-  {
-    "german": "die Polizisten",
-    "english": "police officers"
-  },
-  {
-    "german": "die Stange",
-    "english": "pint (of beer)"
-  },
-  {
-    "german": "das Grün",
-    "english": "green (color), but die Grüne"
-  },
-  {
-    "german": "die Augen",
-    "english": "eyes"
-  },
-  {
-    "german": "das Glück",
-    "english": "luck"
-  },
-  {
-    "german": "das Wörterbuch",
-    "english": "dictionary"
-  },
-  {
-    "german": "der Lehrer",
-    "english": "teacher"
-  },
-  {
-    "german": "der Geburtstag",
-    "english": "birthday"
-  },
-  {
-    "german": "die Übung",
-    "english": "exercise (corrected from \"Ubung\")"
-  },
-  {
-    "german": "der Schnee",
-    "english": "snow"
-  },
-  {
-    "german": "der Donner",
-    "english": "thunder"
-  },
-  {
-    "german": "der Himmel",
-    "english": "sky"
-  },
-  {
-    "german": "der Blitz",
-    "english": "lightning (corrected from \"tonerre\")"
-  },
-  {
-    "german": "die Sonne",
-    "english": "sun"
-  },
-  {
-    "german": "der Regen",
-    "english": "rain"
-  },
-  {
-    "german": "die Wolken",
-    "english": "clouds"
-  },
-  {
-    "german": "die Sonnencreme",
-    "english": "sunscreen"
-  },
-  {
-    "german": "das Zelt",
-    "english": "tent"
-  },
-  {
-    "german": "die Steuerberatung",
-    "english": "tax advice"
-  },
-  {
-    "german": "der Gewinner",
-    "english": "winner"
-  },
-  {
-    "german": "der Stuhl",
-    "english": "chair"
-  },
-  {
-    "german": "das Restaurant",
-    "english": "restaurant"
-  },
-  {
-    "german": "die Pizzeria",
-    "english": "pizzeria"
-  },
-  {
-    "german": "das Bild",
-    "english": "image"
-  },
-  {
-    "german": "die Sechzehn",
-    "english": "sixteen (number as noun)"
-  },
-  {
-    "german": "das Foto",
-    "english": "photo"
-  },
-  {
-    "german": "der Opa / der Großvater",
-    "english": "grandfather"
-  },
-  {
-    "german": "die Oma / die Großmutter",
-    "english": "grandmother"
-  },
-  {
-    "german": "die Mutter",
-    "english": "mother"
-  },
-  {
-    "german": "die Bank",
-    "english": "bench (or \"die Bank\""
-  },
-  {
-    "german": "die Zeichnung",
-    "english": "drawing"
-  },
-  {
-    "german": "die Ferien",
-    "english": "holidays"
-  },
-  {
-    "german": "die Begrüßung",
-    "english": "greeting"
-  },
-  {
-    "german": "die Verabschiedung",
-    "english": "farewell"
-  },
-  {
-    "german": "das Wort",
-    "english": "word"
-  },
-  {
-    "german": "der Traum",
-    "english": "dream"
-  },
-  {
-    "german": "die Besteigung",
-    "english": "climb (noun)"
-  },
-  {
-    "german": "die Hilfe",
-    "english": "help (noun)"
-  },
-  {
-    "german": "die Hoffnung",
-    "english": "hope (noun)"
-  },
-  {
-    "german": "das Geld",
-    "english": "money"
-  },
-  {
-    "german": "der Sohn",
-    "english": "son"
-  },
-  {
-    "german": "die Tochter",
-    "english": "daughter"
-  },
-  {
-    "german": "der Vater",
-    "english": "father"
-  },
-  {
-    "german": "der Schwiegervater",
-    "english": "father-in-law / stepfather"
-  },
-  {
-    "german": "die Schwiegermutter",
-    "english": "mother-in-law / stepmother"
-  },
-  {
-    "german": "der Onkel",
-    "english": "uncle"
-  },
-  {
-    "german": "die Tante",
-    "english": "aunt"
-  },
-  {
-    "german": "die Gespräche",
-    "english": "conversations"
-  },
-  {
-    "german": "die Zertifizierung",
-    "english": "certification"
-  },
-  {
-    "german": "das Unternehmen",
-    "english": "company"
-  },
-  {
-    "german": "die Sache",
-    "english": "thing"
-  },
-  {
-    "german": "das Obst",
-    "english": "fruit"
-  },
-  {
-    "german": "der Schrank",
-    "english": "wardrobe"
-  },
-  {
-    "german": "die Flasche",
-    "english": "bottle"
-  },
-  {
-    "german": "das Regal",
-    "english": "shelf"
-  },
-  {
-    "german": "der Sessel",
-    "english": "armchair"
-  },
-  {
-    "german": "die Badewanne",
-    "english": "bathtub"
-  },
-  {
-    "german": "der Aufzug",
-    "english": "elevator"
-  },
-  {
-    "german": "das Glas",
-    "english": "glass"
-  },
-  {
-    "german": "der Koffer",
-    "english": "suitcase"
-  },
-  {
-    "german": "der Rucksack",
-    "english": "backpack"
-  },
-  {
-    "german": "die Einkaufstasche",
-    "english": "tote bag"
-  },
-  {
-    "german": "die Schwester",
-    "english": "sister"
-  },
-  {
-    "german": "der Bruder",
-    "english": "brother"
-  },
-  {
-    "german": "die Vermutung",
-    "english": "guess"
-  },
-  {
-    "german": "die Hauptstadt",
-    "english": "capital city"
-  },
-  {
-    "german": "der Turm",
-    "english": "tower"
-  },
-  {
-    "german": "das Feuer",
-    "english": "fire"
-  },
-  {
-    "german": "der Koch",
-    "english": "cook"
-  },
-  {
-    "german": "die Baustelle",
-    "english": "construction site"
-  },
-  {
-    "german": "die Freunde",
-    "english": "friends"
-  },
-  {
-    "german": "das Geschlecht",
-    "english": "gender"
-  },
-  {
-    "german": "die Jahreszeit",
-    "english": "season (\"Seasons\" is plural)"
-  },
-  {
-    "german": "die Endung",
-    "english": "ending"
-  },
-  {
-    "german": "die Farbe",
-    "english": "color"
-  },
-  {
-    "german": "der Stoff",
-    "english": "fabric"
-  },
-  {
-    "german": "die Regel",
-    "english": "rule"
-  },
-  {
-    "german": "die Einladung",
-    "english": "invitation"
-  },
-  {
-    "german": "die Eltern",
-    "english": "parents"
-  },
-  {
-    "german": "der Spaß",
-    "english": "fun"
-  },
-  {
-    "german": "das Paar",
-    "english": "pair"
-  },
-  {
-    "german": "der Bekannte",
-    "english": "acquaintance (male), die Bekannte (female)"
-  },
-  {
-    "german": "der Hundert",
-    "english": "hundred (as noun)"
-  },
-  {
-    "german": "das Dampschiff",
-    "english": "steamship"
-  },
-  {
-    "german": "die Flöte",
-    "english": "flute"
-  },
-  {
-    "german": "vergeben",
-    "english": "to forgive"
-  },
-  {
-    "german": "prosten",
-    "english": "to toast (\"prost\" is the interjection)"
-  },
-  {
-    "german": "trainieren",
-    "english": "to work out"
-  },
-  {
-    "german": "kochen",
-    "english": "to cook"
-  },
-  {
-    "german": "besuchen",
-    "english": "to visit"
-  },
-  {
-    "german": "putzen",
-    "english": "to clean"
-  },
-  {
-    "german": "sollen",
-    "english": "should (modal verb)"
-  },
-  {
-    "german": "dürfen",
-    "english": "may / to be allowed to (modal verb)"
-  },
-  {
-    "german": "liegen",
-    "english": "to be located"
-  },
-  {
-    "german": "einladen",
-    "english": "to invite"
-  },
-  {
-    "german": "aufstehen",
-    "english": "to wake up"
-  },
-  {
-    "german": "vergessen",
-    "english": "to forget"
-  },
-  {
-    "german": "empfehlen",
-    "english": "to recommend"
-  },
-  {
-    "german": "teilen",
-    "english": "to share"
-  },
-  {
-    "german": "zeigen",
-    "english": "to show"
-  },
-  {
-    "german": "lachen",
-    "english": "to laugh"
-  },
-  {
-    "german": "träumen",
-    "english": "to dream (corrected from \"traumen\")"
-  },
-  {
-    "german": "klettern",
-    "english": "to climb"
-  },
-  {
-    "german": "helfen",
-    "english": "to help (corrected from \"hilfen\")"
-  },
-  {
-    "german": "hoffen",
-    "english": "to hope (corrected from \"hofen\")"
-  },
-  {
-    "german": "denken",
-    "english": "to think"
-  },
-  {
-    "german": "ergänzen",
-    "english": "to add"
-  },
-  {
-    "german": "wechseln",
-    "english": "to switch"
-  },
-  {
-    "german": "einkaufen",
-    "english": "to shop"
-  },
-  {
-    "german": "nehmen",
-    "english": "to take"
-  },
-  {
-    "german": "erledigen",
-    "english": "to accomplish"
-  },
-  {
-    "german": "versuchen",
-    "english": "to try"
-  },
-  {
-    "german": "öffnen",
-    "english": "to open"
-  },
-  {
-    "german": "beginnen",
-    "english": "to start"
-  },
-  {
-    "german": "umziehen",
-    "english": "to move (residence)"
-  },
-  {
-    "german": "kennenlernen",
-    "english": "to get to know"
-  },
-  {
-    "german": "reden",
-    "english": "to talk"
-  },
-  {
-    "german": "kennen",
-    "english": "to know (someone)"
-  },
-  {
-    "german": "ledig",
-    "english": "single"
-  },
-  {
-    "german": "billig",
-    "english": "cheap"
-  },
-  {
-    "german": "sauer",
-    "english": "sour"
-  },
-  {
-    "german": "salzig",
-    "english": "savory"
-  },
-  {
-    "german": "wirklich",
-    "english": "really"
-  },
-  {
-    "german": "verwitwet",
-    "english": "widowed"
-  },
-  {
-    "german": "geschieden",
-    "english": "divorced"
-  },
-  {
-    "german": "nicht schlecht",
-    "english": "not bad (corrected from \"shclächt\")"
-  },
-  {
-    "german": "fröhlich",
-    "english": "happy (corrected from \"frölich\")"
-  },
-  {
-    "german": "traurig",
-    "english": "sad"
-  },
-  {
-    "german": "böse",
-    "english": "angry"
-  },
-  {
-    "german": "gefährlich",
-    "english": "dangerous"
-  },
-  {
-    "german": "sicher",
-    "english": "safe"
-  },
-  {
-    "german": "bequem",
-    "english": "comfortable"
-  },
-  {
-    "german": "günstig",
-    "english": "cheap"
-  },
-  {
-    "german": "lustig",
-    "english": "funny"
-  },
-  {
-    "german": "arbeitslos",
-    "english": "unemployed"
-  },
-  {
-    "german": "komisch",
-    "english": "weird (\"was komisch ist\""
-  },
-  {
-    "german": "ähnlich",
-    "english": "similar"
-  },
-  {
-    "german": "ganz",
-    "english": "completely"
-  },
-  {
-    "german": "gerne",
-    "english": "gladly / with pleasure"
-  },
-  {
-    "german": "bestimmt",
-    "english": "determined / certainly"
-  }
+  {"german":"die zahlen","english":"the numbers","type":"verb"},
+  {"german":"kette","english":"a chain","type":"other"},
+  {"german":"die Geschenk","english":"a gift","type":"noun"},
+  {"german":"gestiegen","english":"to","type":"verb"},
+  {"german":"vergessen","english":"to forget","type":"verb"},
+  {"german":"die Entfernung","english":"the distance","type":"other"},
+  {"german":"viel","english":"much","type":"other"},
+  {"german":"von beruf","english":"by profession","type":"other"},
+  {"german":"handy","english":"cell phone","type":"other"},
+  {"german":"tragen","english":"to wear","type":"verb"},
+  {"german":"taschen","english":"bags","type":"verb"},
+  {"german":"leeren","english":"to empty","type":"verb"},
+  {"german":"orte","english":"places","type":"other"},
+  {"german":"der Strand","english":"the beach","type":"other"},
+  {"german":"ausschalten","english":"to turn off","type":"verb"},
+  {"german":"pünktlich","english":"precisely","type":"adjective"},
+  {"german":"ausleeren","english":"to empty out","type":"verb"},
+  {"german":"aufhängen","english":"to hang up","type":"verb"},
+  {"german":"fernsehen","english":"tv","type":"verb"},
+  {"german":"aufraümen","english":"to tidy up","type":"verb"},
+  {"german":"abwaschen","english":"washing up","type":"verb"},
+  {"german":"die Geschirr","english":"dishes","type":"noun"},
+  {"german":"danach","english":"afternach","type":"other"},
+  {"german":"früstück","english":"breakfast","type":"other"},
+  {"german":"vorbereiten","english":"to prepare","type":"verb"},
+  {"german":"das wetter","english":"the weather","type":"other"},
+  {"german":"flug","english":"traffic jam","type":"other"},
+  {"german":"gegen","english":"around (time related)","type":"verb"},
+  {"german":"mitkommen","english":"to come with","type":"verb"},
+  {"german":"treffen","english":"to meet","type":"verb"},
+  {"german":"an der","english":"at the","type":"other"},
+  {"german":"zurückkommen","english":"to come back","type":"verb"},
+  {"german":"aufstehen","english":"to get up","type":"verb"},
+  {"german":"zumachen","english":"to close","type":"verb"},
+  {"german":"reinkommen","english":"to come in","type":"verb"},
+  {"german":"aufmachen","english":"to open","type":"verb"},
+  {"german":"anfangen","english":"to begin","type":"verb"},
+  {"german":"ankommen","english":"to arrive","type":"verb"},
+  {"german":"austeigen","english":"to get out","type":"verb"},
+  {"german":"umsteigen","english":"to transfer","type":"verb"},
+  {"german":"einsteigen","english":"to get on board","type":"verb"},
+  {"german":"Der Stift","english":"the pen","type":"noun"},
+  {"german":"Sprachen","english":"languages","type":"verb"},
+  {"german":"schauen","english":"to watch","type":"verb"},
+  {"german":"fußgänger","english":"pedestrian","type":"other"},
+  {"german":"halten","english":"to hold","type":"verb"},
+  {"german":"die Ampel","english":"traffic light","type":"noun"},
+  {"german":"rechnen","english":"calculate","type":"verb"},
+  {"german":"im","english":"in","type":"other"},
+  {"german":"brille","english":"glasses (to wear)","type":"other"},
+  {"german":"oft","english":"often","type":"other"},
+  {"german":"zeigen","english":"to show","type":"verb"},
+  {"german":"kopfschmerzen","english":"","type":"verb"},
+  {"german":"leihen","english":"to lend","type":"verb"},
+  {"german":"antworten","english":"to reply","type":"verb"},
+  {"german":"die Vielleicht","english":"maybe","type":"noun"},
+  {"german":"stoppen","english":"to stop","type":"verb"},
+  {"german":"die meer","english":"the sea","type":"other"},
+  {"german":"laut sein","english":"be loud","type":"verb"},
+  {"german":"hineingehen","english":"go in","type":"verb"},
+  {"german":"wegfahren","english":"to leave","type":"verb"},
+  {"german":"noch nicht","english":"not yet","type":"other"},
+  {"german":"wandern","english":"to hike","type":"verb"},
+  {"german":"das Verb","english":"the verb","type":"other"},
+  {"german":"tisch reservieren","english":"book a table","type":"verb"},
+  {"german":"schlanker","english":"slimmer","type":"other"},
+  {"german":"rauchen","english":"to smoke","type":"verb"},
+  {"german":"zwischen","english":"between","type":"verb"},
+  {"german":"duschen","english":"to shower","type":"verb"},
+  {"german":"sterben","english":"to die","type":"verb"},
+  {"german":"die erklärung","english":"the explanation","type":"other"},
+  {"german":"die Qualitätszeit","english":"quality time","type":"noun"},
+  {"german":"ein anderer","english":"another","type":"other"},
+  {"german":"andere","english":"other","type":"other"},
+  {"german":"Programmieren","english":"to code","type":"verb"},
+  {"german":"das Workout","english":"workout","type":"other"},
+  {"german":"der Teppich","english":"carpet","type":"other"},
+  {"german":"die Prüfung","english":"test","type":"other"},
+  {"german":"die Prostituierte","english":"prostitute (\"Pouf\" is slang, not standard)","type":"other"},
+  {"german":"das Gleiche","english":"the same","type":"other"},
+  {"german":"die Quittung","english":"receipt","type":"other"},
+  {"german":"das Benzin","english":"petrol","type":"verb"},
+  {"german":"das Denkmal","english":"monument","type":"other"},
+  {"german":"der Spiegel","english":"mirror","type":"other"},
+  {"german":"die Pilze","english":"mushrooms","type":"other"},
+  {"german":"der Arzt","english":"doctor (corrected from \"Arz\")","type":"other"},
+  {"german":"der Urlaub","english":"vacation","type":"other"},
+  {"german":"die Putz","english":"cleaning (colloquial; standard is \"das Putzen\")","type":"other"},
+  {"german":"der Süden","english":"south","type":"verb"},
+  {"german":"der See","english":"lake","type":"other"},
+  {"german":"der Fluss","english":"river","type":"other"},
+  {"german":"das Fahrrad","english":"bicycle","type":"other"},
+  {"german":"die Geschwister","english":"siblings","type":"other"},
+  {"german":"das Frühstück","english":"breakfast","type":"other"},
+  {"german":"die Empfehlung","english":"recommendation","type":"other"},
+  {"german":"die Berge","english":"mountains","type":"other"},
+  {"german":"die Wanderung","english":"hike","type":"other"},
+  {"german":"der Rock","english":"skirt","type":"other"},
+  {"german":"die Polizisten","english":"police officers","type":"verb"},
+  {"german":"die Stange","english":"pint (of beer)","type":"other"},
+  {"german":"das Grün","english":"green (color), but die Grüne","type":"verb"},
+  {"german":"die Augen","english":"eyes","type":"verb"},
+  {"german":"das Glück","english":"luck","type":"other"},
+  {"german":"das Wörterbuch","english":"dictionary","type":"other"},
+  {"german":"der Lehrer","english":"teacher","type":"other"},
+  {"german":"der Geburtstag","english":"birthday","type":"other"},
+  {"german":"die Übung","english":"exercise (corrected from \"Ubung\")","type":"other"},
+  {"german":"der Schnee","english":"snow","type":"other"},
+  {"german":"der Donner","english":"thunder","type":"other"},
+  {"german":"der Himmel","english":"sky","type":"other"},
+  {"german":"der Blitz","english":"lightning (corrected from \"tonerre\")","type":"other"},
+  {"german":"die Sonne","english":"sun","type":"other"},
+  {"german":"der Regen","english":"rain","type":"verb"},
+  {"german":"die Wolken","english":"clouds","type":"verb"},
+  {"german":"die Sonnencreme","english":"sunscreen","type":"other"},
+  {"german":"das Zelt","english":"tent","type":"other"},
+  {"german":"die Steuerberatung","english":"tax advice","type":"other"},
+  {"german":"der Gewinner","english":"winner","type":"other"},
+  {"german":"der Stuhl","english":"chair","type":"other"},
+  {"german":"das Restaurant","english":"restaurant","type":"other"},
+  {"german":"die Pizzeria","english":"pizzeria","type":"other"},
+  {"german":"das Bild","english":"image","type":"other"},
+  {"german":"die Sechzehn","english":"sixteen (number as noun)","type":"verb"},
+  {"german":"das Foto","english":"photo","type":"other"},
+  {"german":"der Opa / der Großvater","english":"grandfather","type":"other"},
+  {"german":"die Oma / die Großmutter","english":"grandmother","type":"other"},
+  {"german":"die Mutter","english":"mother","type":"other"},
+  {"german":"die Bank","english":"bench (or \"die Bank\"","type":"other"},
+  {"german":"die Zeichnung","english":"drawing","type":"other"},
+  {"german":"die Ferien","english":"holidays","type":"verb"},
+  {"german":"die Begrüßung","english":"greeting","type":"other"},
+  {"german":"die Verabschiedung","english":"farewell","type":"other"},
+  {"german":"das Wort","english":"word","type":"other"},
+  {"german":"der Traum","english":"dream","type":"other"},
+  {"german":"die Besteigung","english":"climb (noun)","type":"other"},
+  {"german":"die Hilfe","english":"help (noun)","type":"other"},
+  {"german":"die Hoffnung","english":"hope (noun)","type":"other"},
+  {"german":"das Geld","english":"money","type":"other"},
+  {"german":"der Sohn","english":"son","type":"verb"},
+  {"german":"die Tochter","english":"daughter","type":"other"},
+  {"german":"der Vater","english":"father","type":"other"},
+  {"german":"der Schwiegervater","english":"father-in-law / stepfather","type":"other"},
+  {"german":"die Schwiegermutter","english":"mother-in-law / stepmother","type":"other"},
+  {"german":"der Onkel","english":"uncle","type":"other"},
+  {"german":"die Tante","english":"aunt","type":"other"},
+  {"german":"die Gespräche","english":"conversations","type":"other"},
+  {"german":"die Zertifizierung","english":"certification","type":"other"},
+  {"german":"das Unternehmen","english":"company","type":"verb"},
+  {"german":"die Sache","english":"thing","type":"other"},
+  {"german":"das Obst","english":"fruit","type":"other"},
+  {"german":"der Schrank","english":"wardrobe","type":"other"},
+  {"german":"die Flasche","english":"bottle","type":"other"},
+  {"german":"das Regal","english":"shelf","type":"other"},
+  {"german":"der Sessel","english":"armchair","type":"other"},
+  {"german":"die Badewanne","english":"bathtub","type":"other"},
+  {"german":"der Aufzug","english":"elevator","type":"other"},
+  {"german":"das Glas","english":"glass","type":"other"},
+  {"german":"der Koffer","english":"suitcase","type":"other"},
+  {"german":"der Rucksack","english":"backpack","type":"other"},
+  {"german":"die Einkaufstasche","english":"tote bag","type":"other"},
+  {"german":"die Schwester","english":"sister","type":"other"},
+  {"german":"der Bruder","english":"brother","type":"other"},
+  {"german":"die Vermutung","english":"guess","type":"other"},
+  {"german":"die Hauptstadt","english":"capital city","type":"other"},
+  {"german":"der Turm","english":"tower","type":"other"},
+  {"german":"das Feuer","english":"fire","type":"other"},
+  {"german":"der Koch","english":"cook","type":"other"},
+  {"german":"die Baustelle","english":"construction site","type":"other"},
+  {"german":"die Freunde","english":"friends","type":"other"},
+  {"german":"das Geschlecht","english":"gender","type":"other"},
+  {"german":"die Jahreszeit","english":"season (\"Seasons\" is plural)","type":"other"},
+  {"german":"die Endung","english":"ending","type":"other"},
+  {"german":"die Farbe","english":"color","type":"other"},
+  {"german":"der Stoff","english":"fabric","type":"other"},
+  {"german":"die Regel","english":"rule","type":"other"},
+  {"german":"die Einladung","english":"invitation","type":"other"},
+  {"german":"die Eltern","english":"parents","type":"verb"},
+  {"german":"der Spaß","english":"fun","type":"other"},
+  {"german":"das Paar","english":"pair","type":"other"},
+  {"german":"der Bekannte","english":"acquaintance (male), die Bekannte (female)","type":"other"},
+  {"german":"der Hundert","english":"hundred (as noun)","type":"other"},
+  {"german":"das Dampschiff","english":"steamship","type":"other"},
+  {"german":"die Flöte","english":"flute","type":"other"},
+  {"german":"vergeben","english":"to forgive","type":"verb"},
+  {"german":"prosten","english":"to toast (\"prost\" is the interjection)","type":"verb"},
+  {"german":"trainieren","english":"to work out","type":"verb"},
+  {"german":"kochen","english":"to cook","type":"verb"},
+  {"german":"besuchen","english":"to visit","type":"verb"},
+  {"german":"putzen","english":"to clean","type":"verb"},
+  {"german":"sollen","english":"should (modal verb)","type":"verb"},
+  {"german":"dürfen","english":"may / to be allowed to (modal verb)","type":"verb"},
+  {"german":"liegen","english":"to be located","type":"verb"},
+  {"german":"einladen","english":"to invite","type":"verb"},
+  {"german":"aufstehen","english":"to wake up","type":"verb"},
+  {"german":"vergessen","english":"to forget","type":"verb"},
+  {"german":"empfehlen","english":"to recommend","type":"verb"},
+  {"german":"teilen","english":"to share","type":"verb"},
+  {"german":"zeigen","english":"to show","type":"verb"},
+  {"german":"lachen","english":"to laugh","type":"verb"},
+  {"german":"träumen","english":"to dream (corrected from \"traumen\")","type":"verb"},
+  {"german":"klettern","english":"to climb","type":"verb"},
+  {"german":"helfen","english":"to help (corrected from \"hilfen\")","type":"verb"},
+  {"german":"hoffen","english":"to hope (corrected from \"hofen\")","type":"verb"},
+  {"german":"denken","english":"to think","type":"verb"},
+  {"german":"ergänzen","english":"to add","type":"verb"},
+  {"german":"wechseln","english":"to switch","type":"verb"},
+  {"german":"einkaufen","english":"to shop","type":"verb"},
+  {"german":"nehmen","english":"to take","type":"verb"},
+  {"german":"erledigen","english":"to accomplish","type":"verb"},
+  {"german":"versuchen","english":"to try","type":"verb"},
+  {"german":"öffnen","english":"to open","type":"verb"},
+  {"german":"beginnen","english":"to start","type":"verb"},
+  {"german":"umziehen","english":"to move (residence)","type":"verb"},
+  {"german":"kennenlernen","english":"to get to know","type":"verb"},
+  {"german":"reden","english":"to talk","type":"verb"},
+  {"german":"kennen","english":"to know (someone)","type":"verb"},
+  {"german":"ledig","english":"single","type":"adjective"},
+  {"german":"billig","english":"cheap","type":"adjective"},
+  {"german":"sauer","english":"sour","type":"other"},
+  {"german":"salzig","english":"savory","type":"adjective"},
+  {"german":"wirklich","english":"really","type":"adjective"},
+  {"german":"verwitwet","english":"widowed","type":"other"},
+  {"german":"geschieden","english":"divorced","type":"verb"},
+  {"german":"nicht schlecht","english":"not bad (corrected from \"shclächt\")","type":"other"},
+  {"german":"fröhlich","english":"happy (corrected from \"frölich\")","type":"adjective"},
+  {"german":"traurig","english":"sad","type":"adjective"},
+  {"german":"böse","english":"angry","type":"other"},
+  {"german":"gefährlich","english":"dangerous","type":"adjective"},
+  {"german":"sicher","english":"safe","type":"other"},
+  {"german":"bequem","english":"comfortable","type":"other"},
+  {"german":"günstig","english":"cheap","type":"adjective"},
+  {"german":"lustig","english":"funny","type":"adjective"},
+  {"german":"arbeitslos","english":"unemployed","type":"other"},
+  {"german":"komisch","english":"weird (\"was komisch ist\"","type":"adjective"},
+  {"german":"ähnlich","english":"similar","type":"adjective"},
+  {"german":"ganz","english":"completely","type":"other"},
+  {"german":"gerne","english":"gladly / with pleasure","type":"other"},
+  {"german":"bestimmt","english":"determined / certainly","type":"other"}
 ]
