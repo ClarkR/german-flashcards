@@ -86,17 +86,14 @@
       
       // Common patterns for "der" (masculine)
       if (
-        // endings
         lowerWord.endsWith('ling') || 
         lowerWord.endsWith('ich') ||
         lowerWord.endsWith('ig') ||
         lowerWord.endsWith('ner') ||
         lowerWord.endsWith('ismus') ||
-        // days, months, seasons
         ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag', 'samstag', 'sonntag',
          'januar', 'februar', 'märz', 'april', 'mai', 'juni', 'juli', 'august', 'september',
          'oktober', 'november', 'dezember', 'frühling', 'sommer', 'herbst', 'winter'].includes(lowerWord) ||
-        // weather
         lowerWord.endsWith('wind') ||
         lowerWord.endsWith('regen') ||
         lowerWord.endsWith('frost')
@@ -106,17 +103,14 @@
       
       // Common patterns for "das" (neuter)
       if (
-        // endings
         lowerWord.endsWith('chen') ||
         lowerWord.endsWith('lein') ||
         lowerWord.endsWith('ment') ||
         lowerWord.endsWith('tel') ||
         lowerWord.endsWith('um') ||
-        // letters, colors, languages
         /^[a-z]$/.test(lowerWord) ||
         ['blau', 'rot', 'grün', 'gelb', 'schwarz', 'weiß', 'grau',
          'deutsch', 'englisch', 'französisch', 'spanisch'].includes(lowerWord) ||
-        // metals, chemical elements
         lowerWord.endsWith('gold') ||
         lowerWord.endsWith('silber') ||
         lowerWord.endsWith('eisen') ||
@@ -127,7 +121,6 @@
       
       // Common patterns for "die" (feminine)
       if (
-        // endings
         lowerWord.endsWith('ung') ||
         lowerWord.endsWith('heit') ||
         lowerWord.endsWith('keit') ||
@@ -135,9 +128,7 @@
         lowerWord.endsWith('tion') ||
         lowerWord.endsWith('tät') ||
         lowerWord.endsWith('ik') ||
-        // numbers
         ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn'].includes(lowerWord) ||
-        // flowers, trees
         lowerWord.endsWith('blume') ||
         lowerWord.endsWith('rose') ||
         lowerWord.endsWith('lilie') ||
@@ -147,14 +138,12 @@
         return 'die';
       }
       
-      // Default to "die" (most common article in German)
       return 'die';
     }
 
     function addArticleIfNeeded(germanWord, wordType) {
       if (wordType !== 'noun') return germanWord;
       
-      // Check if word already has an article
       const articles = ['der ', 'die ', 'das ', 'den ', 'dem ', 'des '];
       const hasArticle = articles.some(article => 
         germanWord.toLowerCase().startsWith(article)
@@ -162,7 +151,6 @@
       
       if (hasArticle) return germanWord;
       
-      // Determine and add the most likely article
       const article = determineArticle(germanWord);
       return `${article} ${germanWord}`;
     }
@@ -181,22 +169,18 @@
           let g = german.trim();
           const e = english.trim();
 
-          // Process the German word based on type
           g = addArticleIfNeeded(g, wordType);
 
-          const exists = existing.some(card => card.german.toLowerCase() === g.toLowerCase());
-          if (!exists) {
-            newCards.push({ 
-              german: g, 
-              english: e,
-              type: wordType
-            });
-          }
+          newCards.push({ 
+            german: g, 
+            english: e,
+            type: wordType
+          });
         }
       }
 
       if (newCards.length === 0) {
-        alert("No new flashcards to add (all duplicates).");
+        alert("No valid flashcards found in input.");
       } else {
         existing = existing.concat(newCards);
         alert(`Added ${newCards.length} new flashcards.`);
