@@ -29,6 +29,8 @@
       padding: 1rem;
       border-radius: 5px;
       font-family: monospace;
+      max-height: 300px;
+      overflow-y: auto;
     }
   </style>
 </head>
@@ -65,68 +67,37 @@
     }
 
     function determineType(germanWord) {
-      // Check for verbs (infinitive form typically ends with -en or -n)
-      if (germanWord.endsWith('en') || germanWord.endsWith('n')) {
-        return 'verb';
-      }
-      
-      // Check for adjectives (common endings)
+      if (germanWord.endsWith('en') || germanWord.endsWith('n')) return 'verb';
       if (germanWord.endsWith('ig') || germanWord.endsWith('lich') || germanWord.endsWith('isch') || 
-          germanWord.endsWith('bar') || germanWord.endsWith('sam') || germanWord.endsWith('haft')) {
-        return 'adjective';
-      }
-      
-      // Check for nouns (capitalized and not matching verb/adjective patterns)
-      if (germanWord[0] === germanWord[0].toUpperCase() && germanWord[0] !== germanWord[0].toLowerCase()) {
-        return 'noun';
-      }
-      
-      // Default to 'other' if we can't determine
+          germanWord.endsWith('bar') || germanWord.endsWith('sam') || germanWord.endsWith('haft')) return 'adjective';
+      if (germanWord[0] === germanWord[0].toUpperCase() && germanWord[0] !== germanWord[0].toLowerCase()) return 'noun';
       return 'other';
     }
 
     function determineArticle(word) {
       const lowerWord = word.toLowerCase();
-      
       if (lowerWord.endsWith('ling') || lowerWord.endsWith('ich') || lowerWord.endsWith('ig') || 
           lowerWord.endsWith('ner') || lowerWord.endsWith('ismus') ||
           ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag', 'samstag', 'sonntag',
            'januar', 'februar', 'märz', 'april', 'mai', 'juni', 'juli', 'august', 'september',
-           'oktober', 'november', 'dezember', 'frühling', 'sommer', 'herbst', 'winter'].includes(lowerWord)) {
-        return 'der';
-      }
-      
+           'oktober', 'november', 'dezember', 'frühling', 'sommer', 'herbst', 'winter'].includes(lowerWord)) return 'der';
       if (lowerWord.endsWith('chen') || lowerWord.endsWith('lein') || lowerWord.endsWith('ment') || 
           lowerWord.endsWith('tel') || lowerWord.endsWith('um') || /^[a-z]$/.test(lowerWord) ||
-          ['blau', 'rot', 'grün', 'gelb', 'schwarz', 'weiß', 'grau'].includes(lowerWord)) {
-        return 'das';
-      }
-      
+          ['blau', 'rot', 'grün', 'gelb', 'schwarz', 'weiß', 'grau'].includes(lowerWord)) return 'das';
       if (lowerWord.endsWith('ung') || lowerWord.endsWith('heit') || lowerWord.endsWith('keit') || 
           lowerWord.endsWith('schaft') || lowerWord.endsWith('tion') || lowerWord.endsWith('tät') || 
           lowerWord.endsWith('ik') || ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 
-          'acht', 'neun', 'zehn'].includes(lowerWord)) {
-        return 'die';
-      }
-      
+          'acht', 'neun', 'zehn'].includes(lowerWord)) return 'die';
       return 'die';
     }
 
     function processGermanWord(germanWord) {
       const type = determineType(germanWord);
-      
       if (type === 'noun') {
         const articles = ['der ', 'die ', 'das ', 'den ', 'dem ', 'des '];
-        const hasArticle = articles.some(article => 
-          germanWord.toLowerCase().startsWith(article)
-        );
-        
-        if (!hasArticle) {
-          const article = determineArticle(germanWord);
-          return { word: `${article} ${germanWord}`, type };
-        }
+        const hasArticle = articles.some(article => germanWord.toLowerCase().startsWith(article));
+        if (!hasArticle) return { word: `${determineArticle(germanWord)} ${germanWord}`, type };
       }
-      
       return { word: germanWord, type };
     }
 
@@ -140,15 +111,8 @@
       for (const line of lines) {
         const [german, english] = line.split("=");
         if (german && english) {
-          const g = german.trim();
-          const e = english.trim();
-          
-          const processed = processGermanWord(g);
-          newCards.push({ 
-            german: processed.word, 
-            english: e,
-            type: processed.type
-          });
+          const processed = processGermanWord(german.trim());
+          newCards.push({ german: processed.word, english: english.trim(), type: processed.type });
         }
       }
 
@@ -159,12 +123,18 @@
         alert(`Added ${newCards.length} new flashcards.`);
       }
 
-      document.getElementById("output").textContent = JSON.stringify(existing, null, 2);
+      // Compact JSON output with each card on one line
+      document.getElementById("output").textContent = 
+        "[\n" + 
+        existing.map(card => `  ${JSON.stringify(card)}`).join(",\n") + 
+        "\n]";
     }
 
     function download() {
       if (!existing.length) return alert("Nothing to download.");
-      const blob = new Blob([JSON.stringify(existing, null, 2)], { type: "application/json" });
+      // Create compact JSON with each card on one line
+      const jsonContent = "[\n" + existing.map(card => `  ${JSON.stringify(card)}`).join(",\n") + "\n]";
+      const blob = new Blob([jsonContent], { type: "application/json" });
       const a = document.createElement("a");
       a.href = URL.createObjectURL(blob);
       a.download = "words.json";
