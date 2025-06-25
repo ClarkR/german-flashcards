@@ -1,4 +1,5 @@
 let flashcards = [];
+let filteredFlashcards = [];
 let currentCard = null;
 let isReversed = false;
 
@@ -66,6 +67,7 @@ function loadFlashcards() {
     .then(data => {
       const localData = JSON.parse(localStorage.getItem("flashcards")) || [];
       flashcards = localData.length > 0 ? localData : data;
+      filteredFlashcards = [...flashcards];
       if (localData.length === 0) {
         localStorage.setItem("flashcards", JSON.stringify(flashcards));
       }
@@ -83,12 +85,15 @@ function addCard() {
     return;
   }
 
-  if (flashcards.some(card => card.german.toLowerCase() === german.toLowerCase())) {
-    alert("This word already exists!");
-    return;
-  }
+  // Determine type automatically
+  let type = "other";
+  if (german.endsWith('en') || german.endsWith('n')) type = "verb";
+  else if (german.endsWith('ig') || german.endsWith('lich') || german.endsWith('isch') || 
+           german.endsWith('bar') || german.endsWith('sam') || german.endsWith('haft')) type = "adjective";
+  else if (german[0] === german[0].toUpperCase() && german[0] !== german[0].toLowerCase()) type = "noun";
 
-  flashcards.push({ german, english });
+  flashcards.push({ german, english, type });
+  filteredFlashcards = [...flashcards];
   localStorage.setItem("flashcards", JSON.stringify(flashcards));
 
   document.getElementById("german").value = "";
@@ -97,15 +102,35 @@ function addCard() {
 }
 
 // ======================
+// FILTER FUNCTIONS
+// ======================
+function filterFlashcards() {
+  const type = document.getElementById("typeFilter").value;
+  if (type === "all") {
+    filteredFlashcards = [...flashcards];
+  } else {
+    filteredFlashcards = flashcards.filter(card => card.type === type);
+  }
+  // Reset current card if it's not in the filtered set
+  if (currentCard && !filteredFlashcards.includes(currentCard)) {
+    currentCard = null;
+  }
+}
+
+// ======================
 // PRACTICE MODE
 // ======================
 function showRandomCard() {
-  if (flashcards.length === 0) {
-    alert("No flashcards available. Add some first!");
+  if (filteredFlashcards.length === 0) {
+    if (flashcards.length === 0) {
+      alert("No flashcards available. Add some first!");
+    } else {
+      alert("No flashcards match the current filter. Change the filter and try again.");
+    }
     return;
   }
 
-  currentCard = flashcards[Math.floor(Math.random() * flashcards.length)];
+  currentCard = filteredFlashcards[Math.floor(Math.random() * filteredFlashcards.length)];
   document.getElementById("german-word").textContent = isReversed
     ? currentCard.english
     : currentCard.german;
