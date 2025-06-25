@@ -30,12 +30,6 @@
       border-radius: 5px;
       font-family: monospace;
     }
-    .radio-group {
-      margin: 1rem 0;
-    }
-    .radio-group label {
-      margin-right: 1rem;
-    }
   </style>
 </head>
 <body>
@@ -45,13 +39,6 @@
   <button onclick="loadExisting()">Load Existing words-new.json</button>
 
   <textarea id="inputText" placeholder="Paste lines like: Hund = dog"></textarea>
-  
-  <div class="radio-group">
-    <label>Word Type:</label>
-    <label><input type="radio" name="wordType" value="noun" checked> Noun</label>
-    <label><input type="radio" name="wordType" value="verb"> Verb</label>
-    <label><input type="radio" name="wordType" value="adjective"> Adjective</label>
-  </div>
 
   <button onclick="convert()">Convert + Merge</button>
   <button onclick="download()">Download JSON</button>
@@ -77,104 +64,90 @@
       reader.readAsText(file);
     }
 
-    function getWordType() {
-      return document.querySelector('input[name="wordType"]:checked').value;
+    function determineType(germanWord) {
+      // Check for verbs (infinitive form typically ends with -en or -n)
+      if (germanWord.endsWith('en') || germanWord.endsWith('n')) {
+        return 'verb';
+      }
+      
+      // Check for adjectives (common endings)
+      if (germanWord.endsWith('ig') || germanWord.endsWith('lich') || germanWord.endsWith('isch') || 
+          germanWord.endsWith('bar') || germanWord.endsWith('sam') || germanWord.endsWith('haft')) {
+        return 'adjective';
+      }
+      
+      // Check for nouns (capitalized and not matching verb/adjective patterns)
+      if (germanWord[0] === germanWord[0].toUpperCase() && germanWord[0] !== germanWord[0].toLowerCase()) {
+        return 'noun';
+      }
+      
+      // Default to 'other' if we can't determine
+      return 'other';
     }
 
     function determineArticle(word) {
       const lowerWord = word.toLowerCase();
       
-      // Common patterns for "der" (masculine)
-      if (
-        lowerWord.endsWith('ling') || 
-        lowerWord.endsWith('ich') ||
-        lowerWord.endsWith('ig') ||
-        lowerWord.endsWith('ner') ||
-        lowerWord.endsWith('ismus') ||
-        ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag', 'samstag', 'sonntag',
-         'januar', 'februar', 'märz', 'april', 'mai', 'juni', 'juli', 'august', 'september',
-         'oktober', 'november', 'dezember', 'frühling', 'sommer', 'herbst', 'winter'].includes(lowerWord) ||
-        lowerWord.endsWith('wind') ||
-        lowerWord.endsWith('regen') ||
-        lowerWord.endsWith('frost')
-      ) {
+      if (lowerWord.endsWith('ling') || lowerWord.endsWith('ich') || lowerWord.endsWith('ig') || 
+          lowerWord.endsWith('ner') || lowerWord.endsWith('ismus') ||
+          ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag', 'samstag', 'sonntag',
+           'januar', 'februar', 'märz', 'april', 'mai', 'juni', 'juli', 'august', 'september',
+           'oktober', 'november', 'dezember', 'frühling', 'sommer', 'herbst', 'winter'].includes(lowerWord)) {
         return 'der';
       }
       
-      // Common patterns for "das" (neuter)
-      if (
-        lowerWord.endsWith('chen') ||
-        lowerWord.endsWith('lein') ||
-        lowerWord.endsWith('ment') ||
-        lowerWord.endsWith('tel') ||
-        lowerWord.endsWith('um') ||
-        /^[a-z]$/.test(lowerWord) ||
-        ['blau', 'rot', 'grün', 'gelb', 'schwarz', 'weiß', 'grau',
-         'deutsch', 'englisch', 'französisch', 'spanisch'].includes(lowerWord) ||
-        lowerWord.endsWith('gold') ||
-        lowerWord.endsWith('silber') ||
-        lowerWord.endsWith('eisen') ||
-        lowerWord.endsWith('blei')
-      ) {
+      if (lowerWord.endsWith('chen') || lowerWord.endsWith('lein') || lowerWord.endsWith('ment') || 
+          lowerWord.endsWith('tel') || lowerWord.endsWith('um') || /^[a-z]$/.test(lowerWord) ||
+          ['blau', 'rot', 'grün', 'gelb', 'schwarz', 'weiß', 'grau'].includes(lowerWord)) {
         return 'das';
       }
       
-      // Common patterns for "die" (feminine)
-      if (
-        lowerWord.endsWith('ung') ||
-        lowerWord.endsWith('heit') ||
-        lowerWord.endsWith('keit') ||
-        lowerWord.endsWith('schaft') ||
-        lowerWord.endsWith('tion') ||
-        lowerWord.endsWith('tät') ||
-        lowerWord.endsWith('ik') ||
-        ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn'].includes(lowerWord) ||
-        lowerWord.endsWith('blume') ||
-        lowerWord.endsWith('rose') ||
-        lowerWord.endsWith('lilie') ||
-        lowerWord.endsWith('eiche') ||
-        lowerWord.endsWith('tanne')
-      ) {
+      if (lowerWord.endsWith('ung') || lowerWord.endsWith('heit') || lowerWord.endsWith('keit') || 
+          lowerWord.endsWith('schaft') || lowerWord.endsWith('tion') || lowerWord.endsWith('tät') || 
+          lowerWord.endsWith('ik') || ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 
+          'acht', 'neun', 'zehn'].includes(lowerWord)) {
         return 'die';
       }
       
       return 'die';
     }
 
-    function addArticleIfNeeded(germanWord, wordType) {
-      if (wordType !== 'noun') return germanWord;
+    function processGermanWord(germanWord) {
+      const type = determineType(germanWord);
       
-      const articles = ['der ', 'die ', 'das ', 'den ', 'dem ', 'des '];
-      const hasArticle = articles.some(article => 
-        germanWord.toLowerCase().startsWith(article)
-      );
+      if (type === 'noun') {
+        const articles = ['der ', 'die ', 'das ', 'den ', 'dem ', 'des '];
+        const hasArticle = articles.some(article => 
+          germanWord.toLowerCase().startsWith(article)
+        );
+        
+        if (!hasArticle) {
+          const article = determineArticle(germanWord);
+          return { word: `${article} ${germanWord}`, type };
+        }
+      }
       
-      if (hasArticle) return germanWord;
-      
-      const article = determineArticle(germanWord);
-      return `${article} ${germanWord}`;
+      return { word: germanWord, type };
     }
 
     function convert() {
       const input = document.getElementById("inputText").value.trim();
       if (!input) return alert("Paste some text first.");
 
-      const wordType = getWordType();
       const lines = input.split("\n");
       const newCards = [];
 
       for (const line of lines) {
         const [german, english] = line.split("=");
         if (german && english) {
-          let g = german.trim();
+          const g = german.trim();
           const e = english.trim();
-
-          g = addArticleIfNeeded(g, wordType);
-
+          
+          const processed = processGermanWord(g);
           newCards.push({ 
-            german: g, 
+            german: processed.word, 
             english: e,
-            type: wordType
+            type: processed.type
           });
         }
       }
