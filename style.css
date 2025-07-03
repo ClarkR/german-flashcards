@@ -60,6 +60,13 @@ button {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.top-right-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 button:hover {
   background-color: var(--button-hover-bg);
 }
