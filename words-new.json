@@ -33,7 +33,7 @@
   {"german":"hotels buchen","english":"book hotels","type":"verb"},
   {"german":"die Deutschlandreise","english":"german trip","type":"noun"},
   {"german":"getränke","english":"drinks","type":"other"},
-  {"german":"die Wert","english":"value","type":"noun"}
+  {"german":"die Wert","english":"value","type":"noun"},
   {"german":"das ende","english":"the end","type":"other"},
   {"german":"am liebsten","english":"rather","type":"verb"},
   {"german":"Liegen","english":"to lie down","type":"verb"},
@@ -68,7 +68,7 @@
   {"german":"der magen","english":"stomach","type":"verb"},
   {"german":"lebensmittel","english":"food","type":"other"},
   {"german":"haferflocken","english":"oat flakes","type":"verb"},
-  {"german":"Weizen","english":"wheat","type":"verb"
+  {"german":"Weizen","english":"wheat","type":"verb"},
   {"german":"die zahlen","english":"the numbers","type":"verb"},
   {"german":"kette","english":"a chain","type":"other"},
   {"german":"die Geschenk","english":"a gift","type":"noun"},
@@ -308,4 +308,3 @@
   {"german":"gerne","english":"gladly / with pleasure","type":"other"},
   {"german":"bestimmt","english":"determined / certainly","type":"other"}
 ]
-
