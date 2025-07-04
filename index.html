@@ -25,6 +25,9 @@
       color: var(--text-color);
       font-size: 1rem;
     }
+    .translate-toggle {
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -32,7 +35,7 @@
     <a href="converter.html"><button>Go to Converter</button></a>
     <button id="toggleModeBtn" onclick="toggleMode()">🔁 Mode: DE → EN</button>
     <button id="darkModeBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-     <a href="practice.html"><button>📝 Practice Pad</button></a>
+    <a href="practice.html"><button>📝 Practice Pad</button></a>
   </div>
 
   <div class="container" style="max-width:600px; margin: 5rem auto 2rem auto; padding: 0 1rem;">
@@ -48,12 +51,14 @@
         <option value="other">Other</option>
       </select>
     </div>
+
     <div class="card-input">
       <input type="text" id="german" placeholder="German word" />
       <input type="text" id="english" placeholder="English translation" />
       <div class="button-group" style="margin-top: 0.5rem;">
         <button onclick="addCard()">Add Flashcard</button>
         <button onclick="translateInput()">Auto-Translate</button>
+        <button id="translateToggleBtn" class="translate-toggle" onclick="toggleTranslateDirection()">⬅️ DE → EN</button>
       </div>
     </div>
 
