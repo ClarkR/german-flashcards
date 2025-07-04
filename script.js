@@ -2,7 +2,7 @@ let flashcards = [];
 let filteredFlashcards = [];
 let currentCard = null;
 let isReversed = false;
-let translateFromGerman = true; // NEW: direction flag
+let translateFromGerman = true; // Toggle for Auto-Translate direction
 
 // ======================
 // TRANSLATION FUNCTIONS
@@ -66,6 +66,12 @@ async function translateCard() {
 // ======================
 // FLASHCARD MANAGEMENT
 // ======================
+function normalizeType(type) {
+  const t = (type || "").toLowerCase();
+  if (["noun", "verb", "adjective"].includes(t)) return t;
+  return "other";
+}
+
 function loadFlashcards() {
   fetch('words-new.json')
     .then(response => {
@@ -74,11 +80,17 @@ function loadFlashcards() {
     })
     .then(data => {
       const localData = JSON.parse(localStorage.getItem("flashcards")) || [];
-      flashcards = localData.length > 0 ? localData : data;
+      flashcards = (localData.length > 0 ? localData : data).map(card => ({
+        ...card,
+        type: normalizeType(card.type)
+      }));
+
       filteredFlashcards = [...flashcards];
+
       if (localData.length === 0) {
         localStorage.setItem("flashcards", JSON.stringify(flashcards));
       }
+
       console.log("Flashcards loaded:", flashcards.length);
     })
     .catch(error => console.error("Loading error:", error));
@@ -94,12 +106,15 @@ function addCard() {
   }
 
   let type = "other";
-  if (german.endsWith('en') || german.endsWith('n')) type = "verb";
-  else if (german.endsWith('ig') || german.endsWith('lich') || german.endsWith('isch') ||
-           german.endsWith('bar') || german.endsWith('sam') || german.endsWith('haft')) type = "adjective";
+  if (german.endsWith("en") || german.endsWith("n")) type = "verb";
+  else if (
+    german.endsWith("ig") || german.endsWith("lich") || german.endsWith("isch") ||
+    german.endsWith("bar") || german.endsWith("sam") || german.endsWith("haft")
+  ) type = "adjective";
   else if (german[0] === german[0].toUpperCase() && german[0] !== german[0].toLowerCase()) type = "noun";
 
-  flashcards.push({ german, english, type });
+  const newCard = { german, english, type };
+  flashcards.push(newCard);
   filteredFlashcards = [...flashcards];
   localStorage.setItem("flashcards", JSON.stringify(flashcards));
 
@@ -118,6 +133,7 @@ function filterFlashcards() {
   } else {
     filteredFlashcards = flashcards.filter(card => card.type === type);
   }
+
   if (currentCard && !filteredFlashcards.includes(currentCard)) {
     currentCard = null;
   }
@@ -137,6 +153,7 @@ function showRandomCard() {
   }
 
   currentCard = filteredFlashcards[Math.floor(Math.random() * filteredFlashcards.length)];
+
   document.getElementById("german-word").textContent = isReversed
     ? currentCard.english
     : currentCard.german;
