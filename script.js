@@ -2,6 +2,7 @@ let flashcards = [];
 let filteredFlashcards = [];
 let currentCard = null;
 let isReversed = false;
+let translateFromGerman = true; // NEW: direction flag
 
 // ======================
 // TRANSLATION FUNCTIONS
@@ -15,27 +16,34 @@ async function translateText(text) {
   return data.translation;
 }
 
+function toggleTranslateDirection() {
+  translateFromGerman = !translateFromGerman;
+  const btn = document.getElementById("translateToggleBtn");
+  btn.textContent = translateFromGerman ? "⬅️ DE → EN" : "➡️ EN → DE";
+}
+
 async function translateInput() {
   const germanInput = document.getElementById("german");
   const englishInput = document.getElementById("english");
-  const germanText = germanInput.value.trim();
 
-  if (!germanText) {
-    alert("Please enter a German word first.");
+  const sourceText = translateFromGerman ? germanInput.value.trim() : englishInput.value.trim();
+  if (!sourceText) {
+    alert("Please enter a word to translate.");
     return;
   }
 
   try {
-    englishInput.value = "Translating...";
-    englishInput.disabled = true;
-    const translation = await translateText(germanText);
-    englishInput.value = translation;
+    const targetField = translateFromGerman ? englishInput : germanInput;
+    targetField.value = "Translating...";
+    targetField.disabled = true;
+    const translation = await translateText(sourceText);
+    targetField.value = translation;
   } catch (error) {
-    englishInput.value = "";
     alert("Translation failed. Please enter manually.");
     console.error("Translation error:", error);
   } finally {
-    englishInput.disabled = false;
+    const targetField = translateFromGerman ? englishInput : germanInput;
+    targetField.disabled = false;
   }
 }
 
@@ -85,10 +93,9 @@ function addCard() {
     return;
   }
 
-  // Determine type automatically
   let type = "other";
   if (german.endsWith('en') || german.endsWith('n')) type = "verb";
-  else if (german.endsWith('ig') || german.endsWith('lich') || german.endsWith('isch') || 
+  else if (german.endsWith('ig') || german.endsWith('lich') || german.endsWith('isch') ||
            german.endsWith('bar') || german.endsWith('sam') || german.endsWith('haft')) type = "adjective";
   else if (german[0] === german[0].toUpperCase() && german[0] !== german[0].toLowerCase()) type = "noun";
 
@@ -111,7 +118,6 @@ function filterFlashcards() {
   } else {
     filteredFlashcards = flashcards.filter(card => card.type === type);
   }
-  // Reset current card if it's not in the filtered set
   if (currentCard && !filteredFlashcards.includes(currentCard)) {
     currentCard = null;
   }
